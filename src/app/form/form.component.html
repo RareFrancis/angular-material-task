@@ -1,0 +1,16 @@
+<!-- app.component.html -->
+
+<mat-toolbar class="bg-color:primary">
+    
+    <span>My Angular Material App</span>
+
+    
+    <span class="example-spacer"></span> <!-- This spacer will push the buttons to the right -->
+  <div class="ms-auto d-flex" style="margin-left: auto;">
+    <button mat-raised-button color="accent" routerLink="/login">Admin</button>&nbsp;
+    <button mat-raised-button color="warn" class="ms-3" (click)="openEmployeeFormModal()">Add User</button>
+</div>
+
+  </mat-toolbar>
+  
+  

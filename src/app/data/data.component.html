@@ -1,0 +1,61 @@
+<h1>Employee DATA</h1>
+<table mat-table [dataSource]="datas" class="mat-elevation-z8">
+
+
+  <ng-container matColumnDef="Name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let data">{{ data.Name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Email">
+    <th mat-header-cell *matHeaderCellDef>Email</th>
+    <td mat-cell *matCellDef="let data">{{ data.Email }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Phone">
+    <th mat-header-cell *matHeaderCellDef>Phone</th>
+    <td mat-cell *matCellDef="let data">{{ data.Phone }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Company">
+    <th mat-header-cell *matHeaderCellDef>Company</th>
+    <td mat-cell *matCellDef="let data">{{ data.Company }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Address">
+    <th mat-header-cell *matHeaderCellDef>Address</th>
+    <td mat-cell *matCellDef="let data">{{ data.Address }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="State">
+    <th mat-header-cell *matHeaderCellDef>State</th>
+    <td mat-cell *matCellDef="let data">{{ data.State }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="City">
+    <th mat-header-cell *matHeaderCellDef>City</th>
+    <td mat-cell *matCellDef="let data">{{ data.City }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="edit">
+    <th mat-header-cell *matHeaderCellDef>Edit</th>
+    <td mat-cell *matCellDef="let data">
+      <!-- <button mat-button color="warn" [routerLink]="'/update/' + data.id">Edit</button> -->
+      <mat-icon style="font-size: 24px;color: blue;" [routerLink]="'/update/' + data.id">edit</mat-icon>
+
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef>Delete</th>
+    <td mat-cell *matCellDef="let data">
+      <!-- <button mat-button color="primary" (click)="deleteStudent(data.id)">Delete</button> -->
+      <mat-icon style="font-size: 24px; color: red;" (click)="deleteStudent(data.id)">delete</mat-icon>
+
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

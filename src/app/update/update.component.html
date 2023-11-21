@@ -1,0 +1,40 @@
+<mat-card class="card">
+    <mat-card-header>
+      <h1 style="text-align:center"><b>UPDATE FORM</b></h1>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="updateForm" class="example-form" novalidate>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter Name" formControlName="Name">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Enter Email"formControlName ="Email">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="Enter Phonenumber" formControlName="Phone">
+        </mat-form-field>
+  
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Company</mat-label>
+          <input matInput placeholder="Enter country" formControlName="Company">
+        </mat-form-field>
+  
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Enter State" formControlName="Address">
+        </mat-form-field>
+  
+        <div class="float-end">
+          <button mat-raised-button color="primary" (click)="update()">update</button>
+          <button mat-raised-button color="warn" class="ms-3" type="reset">Reset</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>

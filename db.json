@@ -1,0 +1,51 @@
+{
+  "users":[
+    {"username": "Francis", "password": "627857"}
+  
+   
+  ],
+  
+  
+  "posts": [
+    {
+      "Name": "riyaz nisha",
+      "Email": "franciseee627@gmail.com",
+      "Phone": "7639941468",
+      "Company": "Yamee Cluster",
+      "Address": "3/50-church street",
+      "State": "sd",
+      "City": "sdm",
+      "id": 1
+    },
+    {
+      "Name": "riyaz nisha",
+      "Email": "franciseee627@gmail.com",
+      "Phone": "7639941468",
+      "Company": "Yamee Cluster",
+      "Address": "3/50-church street",
+      "State": "sd",
+      "City": "sdm",
+      "id": 2
+    },
+    {
+      "Name": "Nisha Raju",
+      "Email": "francisraju1999@gmail.com",
+      "Phone": "7639941468",
+      "Company": "Yamee Cluster",
+      "Address": "3/50-church street",
+      "State": "sd",
+      "City": "sdn",
+      "id": 3
+    },
+    {
+      "Name": "Francis K",
+      "Email": "francisraju@gmail.com",
+      "Phone": "7639941468",
+      "Company": "Yamee Cluster",
+      "Address": "3-50-church street",
+      "State": "sd",
+      "City": "sdn",
+      "id": 4
+    }
+  ]
+}

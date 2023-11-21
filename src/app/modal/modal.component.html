@@ -1,0 +1,57 @@
+<mat-card class="card">
+    <mat-card-header></mat-card-header>
+    <h1 style="text-align:center"><b>EMPLOYEE FORM</b></h1>
+    <mat-card-content style="height: 350px;">
+      <form [formGroup]="registerForm" class="example-form" novalidate>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter Name" formControlName="Name"
+          [matTooltip]="registerForm.get('Name')?.hasError('required')?'Name is required':''">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Enter Email" formControlName="Email"
+          [matTooltip]="registerForm.get('Name')?.hasError('required')?'tony123@gmail.com':''">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="Enter Phonenumber" formControlName="Phone"
+          [matTooltip]="registerForm.get('Name')?.hasError('required')?'10 digit number required':''">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Company</mat-label>
+            <input matInput placeholder="Enter State" formControlName="Company"
+            [matTooltip]="registerForm.get('Name')?.hasError('required')?'Company Name is required':''">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="Enter country" formControlName="Address"
+            [matTooltip]="registerForm.get('Name')?.hasError('required')?'2-50,Church Sreet':''">
+          </mat-form-field>
+  
+       <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="Enter State" formControlName="State"
+          [matTooltip]="registerForm.get('Name')?.hasError('required')?'State is required':''">
+        </mat-form-field>
+  
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="Enter City" formControlName="City"
+          [matTooltip]="registerForm.get('Name')?.hasError('required')?'City is required':''">
+        </mat-form-field>
+
+        <div class="d-flex mx-auto mx-3 " style="box-shadow: 0px 0px white; text-align: center;">
+          <button mat-raised-button color="primary" (click)="addStudent()" [disabled]="this.registerForm.invalid">Add</button>&nbsp;
+          <button mat-raised-button color="warn" class="ms-3" type="reset">Reset</button>
+        </div>
+
+  
+      </form>
+    </mat-card-content>
